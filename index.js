@@ -22,15 +22,16 @@ email:"steve@steve.com",
       return response.json();
     })
     .then((data)=>{
-      console.log(data)
-      document.body.innerHTML=data['id']
+      console.log(data);
+      document.body.innerHTML=data['id'];
     
     }
     
     )
     .catch(function (error) {
     alert ("Unauthorized Access");
-     console.log("Unauthorized Access")
-      Document.body.innerHTML='Unauthorized Access'
+     console.log("Unauthorized Access");
+     // Document.body.innerHTML='error'
+      //return 'Unauthorized Access'
     });
   }
